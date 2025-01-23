@@ -1,0 +1,75 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+    background-image: url(https://wallpapercave.com/wp/wp8798403.jpg);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+  }
+  
+  .clouds {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+  }
+  
+  .cloud {
+    position: absolute;
+    animation: moveClouds 60s linear infinite;
+  }
+  
+  .cloud1 {
+    top: 20%;
+    left: -15%;
+    animation-duration: 120s;
+  }
+  
+  .cloud2 {
+    top: 30%;
+    left: -20%;
+    animation-duration: 150s;
+  }
+  
+  .cloud3 {
+    top: 40%;
+    left: -25%;
+    animation-duration: 180s;
+  }
+  
+  @keyframes moveClouds {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(100vw); }
+  }
+  
+  .weather-container {
+    text-align: center;
+    color: white;
+    padding: 20px;
+    border-radius: 15px;
+    background-color: rgba(0, 0, 0, 0.5);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    z-index: 1;
+    width: 60vw;
+    /* height: 30vh; */
+  }
+  
+  h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+  }
+  
+  .weather-info p {
+    font-size: 1.2em;
+    margin: 10px 0;
+  }
+  
